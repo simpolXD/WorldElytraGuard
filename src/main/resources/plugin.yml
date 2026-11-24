@@ -1,0 +1,25 @@
+name: AbyssaldominionWorldElytraGuard
+version: '1.0.0'
+main: com.abyssaldominion.elytraguard.AbyssaldominionWorldElytraGuard
+api-version: '26.2'
+
+commands:
+  elytraguard:
+    description: Main command for AbyssaldominionWorldElytraGuard
+    usage: /<command> reload | version
+    permission: elytraguard.reload
+    permission-message: You do not have permission to use this command.
+
+    version:
+      description: Show the plugin version and author
+      usage: /elytraguard version
+      permission: elytraguard.version
+      permission-message: You do not have permission to view the plugin version.
+
+permissions:
+  elytraguard.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+  elytraguard.version:
+    description: Allows viewing the plugin version
+    default: true

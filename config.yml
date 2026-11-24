@@ -1,0 +1,25 @@
+settings:
+  # Master enable/disable for the plugin
+  enabled: true
+
+  # Worlds where Elytra restrictions apply
+  # Leave empty to disable restrictions in all worlds
+  blocked-worlds:
+    - world_creative
+    - event_world
+
+  # Prevent equipping Elytra into the chest armor slot
+  prevent-equipping: true
+
+  # Prevent starting or continuing Elytra gliding
+  prevent-gliding: true
+
+  # Automatically unequip Elytra when entering a restricted world
+  # The item is safely moved to the player's inventory if space is available
+  force-unequip-on-entry: true
+
+messages:
+  equip-blocked: "<red>You cannot equip an Elytra in this world."
+  glide-blocked: "<red>Elytra flight is disabled in this world."
+  reload-success: "<green>AbyssaldominionWorldElytraGuard configuration reloaded."
+  inventory-full: "<yellow>Make space in your inventory to safely unequip your Elytra."
